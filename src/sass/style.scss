@@ -1,2 +1,29 @@
 @import "common/reset.scss";
 @import "common/common";
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+canvas,.canvas{
+  width: 100%;
+  height: 100%;
+}
+.canvas{
+  max-width: 1600px;
+  max-height: 1200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.list{
+  margin: 30px;
+  a{
+    color: #000;
+    line-height: 2;
+  }
+}

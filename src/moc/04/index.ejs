@@ -1,4 +1,4 @@
-<%include('ejs/_data'); var meta = getData();%>
+<%include('../../ejs/_data'); var meta = getData();%>
 <%
 var absolutePath = filename.split(site.developDir)[filename.split(site.developDir).length -1].replace('.ejs','.html');
 var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
@@ -11,11 +11,11 @@ var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="description">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="assets/css/style.css?<%=Math.random()%>">
+    <link rel="stylesheet" href="../../assets/css/style.css?<%=Math.random()%>">
+    <script src='../../assets/js/lib.js' defer></script>
+    <script src="../../assets/js/app.js?<%=Math.random()%>" defer></script>
   </head>
-  <body>
-    <div class="list">
-      <a href="moc/01">01</a>
-    </div>
+  <body class="04">
+    <div class="canvas"></div>
   </body>
 </html>
